@@ -1,0 +1,8 @@
+Inspiration website:
+https://templates.envytheme.com/robtic/default/index.html
+
+Website contents:
+syriaplast_website_content.md
+
+Articles:
+website_articles.md
