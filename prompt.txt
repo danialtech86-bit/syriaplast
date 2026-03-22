@@ -1,8 +1,20 @@
+Generate a static HTML website for 'Syriaplast - سوريا بلاست' with the following:
+
 Inspiration website:
 https://templates.envytheme.com/robtic/default/index.html
+
+The logo images:
+img/H Logo.png
+img/H Logo.svg
+img/V Logo.png
+img/V Logo.svg
 
 Website contents:
 syriaplast_website_content.md
 
 Articles:
 website_articles.md
+
+
+- For missed image use image placeholder website:
+https://placehold.co/
