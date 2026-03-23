@@ -1183,6 +1183,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   .hero-title { font-size: 1.75rem; }
   .article-content { font-size: 1rem; }
   .article-featured-img img { height: 250px; }
+  #navMenu { margin-bottom: 1rem; }
 }
 
 /* ========================================
