@@ -29,7 +29,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
   direction: rtl;
   text-align: right;
   color: var(--text);
@@ -39,7 +39,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
   font-weight: 700;
   color: var(--dark);
   line-height: 1.4;
@@ -870,7 +870,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 12px 16px;
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
   font-size: 1rem;
   color: var(--text);
   transition: var(--transition);
@@ -1463,7 +1463,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   padding: 12px 16px;
   border: 2px solid var(--border);
   border-radius: var(--radius-sm);
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
   font-size: 0.95rem;
   color: var(--text);
   background: var(--white);
