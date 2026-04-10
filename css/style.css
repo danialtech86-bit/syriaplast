@@ -186,9 +186,10 @@ ul { list-style: none; padding: 0; margin: 0; }
   box-shadow: 0 4px 30px rgba(0,38,35,0.15);
 }
 
-.navbar-brand img { height: 75px; transition: var(--transition); width: 100px;object-fit: cover;object-position: center;}
+.navbar-brand img {
+transition: var(--transition);width: 150px;object-fit: contain;object-position: center;
+}
 
-.main-navbar.scrolled .navbar-brand img { height: 60px; }
 
 .main-navbar .nav-link {
   font-weight: 600;
@@ -549,6 +550,155 @@ ul { list-style: none; padding: 0; margin: 0; }
 .product-body h3 { font-size: 1.1rem; color: var(--primary); margin-bottom: 0.5rem; }
 .product-body p { font-size: 0.9rem; color: var(--gray); margin: 0; }
 
+/* ---- Catalogs ---- */
+.catalog-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.catalog-thumb {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  background: var(--light-gray);
+}
+
+.catalog-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.catalog-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #dc3545;
+}
+
+.catalog-placeholder i {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.catalog-placeholder span {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary);
+  letter-spacing: 2px;
+}
+
+.catalog-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 38, 35, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.catalog-card:hover .catalog-overlay {
+  opacity: 1;
+}
+
+.catalog-btn-view {
+  color: var(--white);
+  border: 2px solid var(--white);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.catalog-btn-view:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+
+.catalog-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-body h3 {
+  font-size: 1.25rem;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.catalog-body p {
+  font-size: 0.95rem;
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.catalog-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-catalog-main {
+  background: var(--primary);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  flex: 2;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-catalog-main:hover {
+  background: var(--primary-light);
+  color: var(--white);
+}
+
+.btn-catalog-secondary {
+  background: var(--light-gray);
+  color: var(--primary);
+  padding: 10px 15px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  flex: 1;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-catalog-secondary:hover {
+  background: var(--border);
+  color: var(--primary);
+}
+
 /* ---- CTA Section ---- */
 .cta-section {
   background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
@@ -574,6 +724,7 @@ ul { list-style: none; padding: 0; margin: 0; }
 
 /* ---- Blog Cards ---- */
 .blog-card {
+  position: relative;
   background: var(--white);
   border-radius: var(--radius);
   overflow: hidden;
@@ -1164,7 +1315,6 @@ ul { list-style: none; padding: 0; margin: 0; }
   .main-navbar .nav-link { padding: 0.75rem 1rem !important; }
   .main-navbar .nav-link::after { display: none; }
   .navbar-contact-btn { margin-right: 0; margin-top: 0.5rem; align-self: flex-start;}
-  .navbar-brand img { height: 60px;}
 }
 
 @media (max-width: 767px) {
@@ -1190,6 +1340,7 @@ ul { list-style: none; padding: 0; margin: 0; }
    BLOG LISTING PAGE
 ======================================== */
 .blog-card {
+  position: relative;
   background: var(--white);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
