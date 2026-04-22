@@ -288,6 +288,46 @@
   </div>
 </section>
 
+<!-- ISO 9001 Certificate Section -->
+<section class="section-pad-sm bg-light-custom">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-4">
+      <div class="col-lg-7">
+        <p class="text-accent fw-bold mb-2" style="font-size:0.9rem; letter-spacing:1px;">شهادات الجودة</p>
+        <h2 class="section-title" style="font-size: 1.8rem;">حاصلون على شهادة ISO 9001:2015</h2>
+        <div class="title-line center"></div>
+        <p class="section-subtitle mb-0">نلتزم بأعلى معايير إدارة الجودة العالمية لضمان تقديم أفضل المنتجات لعملائنا.</p>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-5 col-lg-4 fade-in-up">
+        <div class="certificate-card" data-bs-img="img/iso9001-certificate-ar.jpeg" data-bs-target="#certModal"
+             data-bs-toggle="modal">
+          <div class="certificate-thumb">
+            <img alt="شهادة آيزو 9001 - النسخة العربية" src="img/iso9001-certificate-ar-small.jpeg">
+            <div class="certificate-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <h4 class="certificate-label">ISO 9001 - النسخة العربية</h4>
+        </div>
+      </div>
+      <div class="col-md-5 col-lg-4 fade-in-up">
+        <div class="certificate-card" data-bs-img="img/iso9001-certificate-en.jpeg" data-bs-target="#certModal"
+             data-bs-toggle="modal">
+          <div class="certificate-thumb">
+            <img alt="ISO 9001 Certificate - English Version" src="img/iso9001-certificate-en-small.jpeg">
+            <div class="certificate-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <h4 class="certificate-label">ISO 9001 - English Version</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Products Showcase -->
 <section class="section-pad">
   <div class="container">
@@ -612,8 +652,31 @@
   <i class="fas fa-chevron-up"></i>
 </button>
 
+<!-- Modal for Certificate Viewer -->
+<div aria-hidden="true" class="modal fade" id="certModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+        <img alt="ISO 9001 Certificate" class="img-fluid" id="modalImg" src="">
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+  // Certificate Modal Logic
+  const certModal = document.getElementById('certModal');
+  if (certModal) {
+    certModal.addEventListener('show.bs.modal', (event) => {
+      const button = event.relatedTarget;
+      const imgSrc = button.getAttribute('data-bs-img');
+      const modalImg = certModal.querySelector('#modalImg');
+      modalImg.src = imgSrc;
+    });
+  }
+
   window.addEventListener('load', () => {
     const pre = document.getElementById('preloader');
     pre.classList.add('hidden');

@@ -516,6 +516,110 @@ transition: var(--transition);width: 150px;object-fit: contain;object-position: 
   margin: auto;
 }
 
+/* ---- Certificates Section ---- */
+.certificate-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  text-align: center;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--accent);
+}
+
+.certificate-thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1.25rem;
+  background: #f8f9fa;
+  border: 1px solid #eee;
+  aspect-ratio: 1 / 1.414; /* A4 aspect ratio */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificate-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+  display: block;
+}
+
+.certificate-card:hover .certificate-thumb img {
+  transform: scale(1.05);
+}
+
+.certificate-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 38, 35, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.certificate-card:hover .certificate-overlay {
+  opacity: 1;
+}
+
+.certificate-overlay i {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.certificate-label {
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Modal for Image Viewer */
+#certModal .modal-content {
+  background: transparent;
+  border: none;
+}
+
+#certModal .modal-body {
+  padding: 0;
+  position: relative;
+}
+
+#certModal .btn-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  filter: invert(1);
+  opacity: 1;
+  z-index: 1060;
+}
+
+#certModal img {
+  border-radius: var(--radius);
+  max-height: 90vh;
+  object-fit: contain;
+  width: 100%;
+}
+
 /* ---- Products ---- */
 .product-card {
   background: var(--white);
