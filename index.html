@@ -12,9 +12,18 @@
   <link href="/favicon.ico" rel="shortcut icon" />
   <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
   <link href="/site.webmanifest" rel="manifest" />
+  <!-- DNS Prefetch for CDNs -->
+  <link href="https://fonts.googleapis.com" rel="dns-prefetch">
+  <link href="https://fonts.gstatic.com" rel="dns-prefetch">
+  <link href="https://cdn.jsdelivr.net" rel="dns-prefetch">
+  <link href="https://cdnjs.cloudflare.com" rel="dns-prefetch">
+  <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Async Google Fonts -->
+  <link as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700;800&display=swap" rel="preload">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700;800&display=swap" media="print" onload="this.media='all'" rel="stylesheet">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700;800&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -24,7 +33,7 @@
 <!-- Preloader -->
 <div id="preloader">
   <div class="preloader-logo">
-    <img src="img/V Logo.png" alt="سوريا بلاست">
+    <img alt="سوريا بلاست" height="160" src="img/V Logo.png" width="160">
   </div>
 </div>
 
@@ -147,7 +156,7 @@
   <div class="container">
     <div class="row justify-content-center text-center mb-5">
       <div class="col-lg-7">
-        <p class="text-accent fw-bold mb-2" style="font-size:0.95rem; letter-spacing:1px;">قدراتنا الصناعية</p>
+        <p class="text-accent fw-bold mb-2" style="font-size:0.95rem; letter-spacing:1px; text-transform:uppercase;">قدراتنا الصناعية</p>
         <h2 class="section-title">خدمات صناعية متكاملة<br>لمشاريع البنية التحتية</h2>
         <div class="title-line center"></div>
         <p class="section-subtitle">في سوريا بلاست لا نقدم منتجات فقط، بل نوفر حلولاً صناعية متكاملة لمشاريع المياه
@@ -213,7 +222,7 @@
   <div class="container">
     <div class="row align-items-center g-5">
       <div class="col-lg-6 fade-in-up">
-        <p class="text-accent fw-bold mb-2" style="font-size:0.95rem; letter-spacing:1px;">لماذا سوريا بلاست؟</p>
+        <p class="text-accent fw-bold mb-2" style="font-size:0.95rem; letter-spacing:1px; text-transform:uppercase;">لماذا سوريا بلاست؟</p>
         <h2 class="section-title">شريكك الصناعي الموثوق<br>في مشاريع البنية التحتية</h2>
         <div class="title-line"></div>
         <p class="mb-4" style="color:var(--gray); font-size:1rem;">من مدينة حسياء الصناعية، نقدم حلولاً صناعية متكاملة
@@ -250,7 +259,7 @@
       </div>
       <div class="col-lg-6 fade-in-up">
         <img src="img/why-syriaplast-image.jpeg" alt="معمل سوريا بلاست"
-             class="img-fluid rounded-4 shadow-lg">
+             class="img-fluid rounded-4 shadow-lg" height="450" loading="lazy" width="600">
       </div>
     </div>
   </div>
@@ -304,7 +313,7 @@
         <div class="certificate-card" data-bs-img="img/iso9001-certificate-ar.jpeg" data-bs-target="#certModal"
              data-bs-toggle="modal">
           <div class="certificate-thumb">
-            <img alt="شهادة آيزو 9001 - النسخة العربية" src="img/iso9001-certificate-ar-small.jpeg">
+            <img alt="شهادة آيزو 9001 - النسخة العربية" height="566" loading="lazy" src="img/iso9001-certificate-ar-small.jpeg" width="400">
             <div class="certificate-overlay">
               <i class="fas fa-search-plus"></i>
             </div>
@@ -316,7 +325,7 @@
         <div class="certificate-card" data-bs-img="img/iso9001-certificate-en.jpeg" data-bs-target="#certModal"
              data-bs-toggle="modal">
           <div class="certificate-thumb">
-            <img alt="ISO 9001 Certificate - English Version" src="img/iso9001-certificate-en-small.jpeg">
+            <img alt="ISO 9001 Certificate - English Version" height="566" loading="lazy" src="img/iso9001-certificate-en-small.jpeg" width="400">
             <div class="certificate-overlay">
               <i class="fas fa-search-plus"></i>
             </div>
@@ -333,7 +342,7 @@
   <div class="container">
     <div class="row justify-content-center text-center mb-5">
       <div class="col-lg-7">
-        <p class="text-accent fw-bold mb-2" style="font-size:0.95rem; letter-spacing:1px;">منتجاتنا</p>
+        <p class="text-accent fw-bold mb-2" style="font-size:0.95rem; letter-spacing:1px; text-transform:uppercase;">منتجاتنا</p>
         <h2 class="section-title">نصنع منتجات تتحمل<br>الضغط والزمن</h2>
         <div class="title-line center"></div>
       </div>
@@ -342,7 +351,7 @@
       <div class="col-lg-3 col-md-6 fade-in-up">
         <div class="product-card">
           <div class="product-img">
-            <img src="img/hdpe-water-supply-pipe.jpg" alt="أنابيب HDPE">
+            <img alt="أنابيب HDPE" height="220" loading="lazy" src="img/hdpe-water-supply-pipe.jpg" width="400">
           </div>
           <div class="product-body">
             <h3>أنابيب HDPE</h3>
@@ -353,7 +362,7 @@
       <div class="col-lg-3 col-md-6 fade-in-up">
         <div class="product-card">
           <div class="product-img">
-            <img src="img/sewage-pipes.jpg" alt="قساطل صرف صحي">
+            <img alt="قساطل صرف صحي" height="220" loading="lazy" src="img/sewage-pipes.jpg" width="400">
           </div>
           <div class="product-body">
             <h3>قساطل الصرف الصحي</h3>
@@ -364,7 +373,7 @@
       <div class="col-lg-3 col-md-6 fade-in-up">
         <div class="product-card">
           <div class="product-img">
-            <img src="img/plastic-manholes.jpeg" alt="غرف تفتيش بلاستيكية">
+            <img alt="غرف تفتيش بلاستيكية" height="220" loading="lazy" src="img/plastic-manholes.jpeg" width="400">
           </div>
           <div class="product-body">
             <h3>غرف التفتيش البلاستيكية</h3>
@@ -375,7 +384,7 @@
       <div class="col-lg-3 col-md-6 fade-in-up">
         <div class="product-card">
           <div class="product-img">
-            <img src="img/water-storage.jpg" alt="خزانات مياه">
+            <img alt="خزانات مياه" height="220" loading="lazy" src="img/water-storage.jpg" width="400">
           </div>
           <div class="product-body">
             <h3>خزانات المياه 4 طبقات</h3>
@@ -437,7 +446,7 @@
       <div class="col-lg-4 col-md-6 fade-in-up">
         <div class="blog-card">
           <div class="blog-img">
-            <img src="img/article-1.jpg" alt="مقال سوريا بلاست">
+            <img alt="مقال سوريا بلاست" height="220" loading="lazy" src="img/article-1.jpg" width="600">
           </div>
           <div class="blog-body">
             <span class="blog-category">قصة المعمل</span>
@@ -454,7 +463,7 @@
       <div class="col-lg-4 col-md-6 fade-in-up">
         <div class="blog-card">
           <div class="blog-img">
-            <img src="img/article-2.jpg" alt="مقال سوريا بلاست">
+            <img alt="مقال سوريا بلاست" height="220" loading="lazy" src="img/article-2.jpg" width="600">
           </div>
           <div class="blog-body">
             <span class="blog-category">رحلة التطور</span>
@@ -471,7 +480,7 @@
       <div class="col-lg-4 col-md-6 fade-in-up">
         <div class="blog-card">
           <div class="blog-img">
-            <img src="img/article-3.jpg" alt="مقال سوريا بلاست">
+            <img alt="مقال سوريا بلاست" height="220" loading="lazy" src="img/article-3.jpg" width="600">
           </div>
           <div class="blog-body">
             <span class="blog-category">تقنيات صناعية</span>
@@ -508,7 +517,7 @@
       <div class="col-lg-5 col-md-6 fade-in-up">
         <div class="catalog-card">
           <div class="catalog-thumb">
-            <img alt="الكتالوج الفني - الجزء الأول" src="img/cover-1.jpg">
+            <img alt="الكتالوج الفني - الجزء الأول" height="300" loading="lazy" src="img/cover-1.jpg" width="600">
             <div class="catalog-overlay">
               <a class="catalog-btn-view" href="https://catalogs.syria-plast.com/1.pdf" target="_blank">
                 <i class="fas fa-eye"></i> عرض الكتالوج
@@ -532,7 +541,7 @@
       <div class="col-lg-5 col-md-6 fade-in-up">
         <div class="catalog-card">
           <div class="catalog-thumb">
-            <img alt="الكتالوج الفني - الجزء الثاني" src="img/cover-2.jpg">
+            <img alt="الكتالوج الفني - الجزء الثاني" height="300" loading="lazy" src="img/cover-2.jpg" width="600">
             <div class="catalog-overlay">
               <a class="catalog-btn-view" href="https://catalogs.syria-plast.com/2.pdf" target="_blank">
                 <i class="fas fa-eye"></i> عرض الكتالوج
@@ -647,8 +656,14 @@
   </div>
 </footer>
 
+<!-- WhatsApp Float -->
+<a aria-label="تواصل عبر واتساب" class="whatsapp-float" href="https://wa.me/963983335577" rel="noopener" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+  <span class="wa-tooltip">تواصل عبر واتساب</span>
+</a>
+
 <!-- Back to Top -->
-<button id="backToTop" title="العودة للأعلى">
+<button aria-label="العودة للأعلى" id="backToTop" title="العودة للأعلى">
   <i class="fas fa-chevron-up"></i>
 </button>
 
@@ -664,7 +679,7 @@
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   // Certificate Modal Logic
   const certModal = document.getElementById('certModal');
@@ -702,6 +717,36 @@
   }, {threshold: 0.15});
 
   document.querySelectorAll('.fade-in-up').forEach(el => obs.observe(el));
+
+  // Animated stat counters
+  function animateCounter(el) {
+    const text = el.textContent.trim();
+    const prefix = text.match(/^[^0-9]*/)[0];
+    const suffix = text.match(/[^0-9]*$/)[0];
+    const target = parseInt(text.replace(/[^0-9]/g, ''), 10);
+    if (isNaN(target)) return;
+    let start = 0;
+    const duration = 1800;
+    const step = (timestamp) => {
+      if (!start) start = timestamp;
+      const progress = Math.min((timestamp - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = prefix + Math.floor(eased * target) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+  const counterObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        animateCounter(e.target);
+        counterObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.stat-number-big').forEach(el => counterObs.observe(el));
 </script>
 </body>
 </html>

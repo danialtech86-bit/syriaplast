@@ -6,9 +6,18 @@
   <title>شبكات مياه الشرب الآمنة: لماذا نستخدم HDPE؟ | المدونة</title>
   <meta name="description" content="لماذا تعتبر أنابيب HDPE الخيار الأفضل لشبكات مياه الشرب؟ اكتشف مزايا البولي إيثيلين عالي الكثافة ودوره في حلول البنية التحتية ونقل المياه في سوريا.">
   <link rel="icon" href="favicon.ico">
+  <!-- DNS Prefetch for CDNs -->
+  <link href="https://fonts.googleapis.com" rel="dns-prefetch">
+  <link href="https://fonts.gstatic.com" rel="dns-prefetch">
+  <link href="https://cdn.jsdelivr.net" rel="dns-prefetch">
+  <link href="https://cdnjs.cloudflare.com" rel="dns-prefetch">
+  <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Async Google Fonts -->
+  <link as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700;800&display=swap" rel="preload">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700;800&display=swap" media="print" onload="this.media='all'" rel="stylesheet">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700;800&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -69,7 +78,7 @@
             </div>
           </div>
           <div class="article-featured-img">
-            <img src="img/article-3.jpg" alt="أنابيب HDPE شبكات مياه الشرب">
+            <img alt="أنابيب HDPE شبكات مياه الشرب" loading="lazy" src="img/article-3.jpg">
           </div>
           <div class="article-content">
             <p>مع تطور المدن وتوسع المشاريع العمرانية، أصبحت شبكات مياه الشرب جزءاً أساسياً من البنية التحتية لأي مدينة أو مشروع سكني. فهذه الشبكات مسؤولة عن نقل المياه بشكل آمن وصحي من مصادرها إلى المنازل والمنشآت المختلفة. ومع التقدم في المواد الصناعية، ظهرت حلول أكثر كفاءة واستدامة مقارنةً بالمواد التقليدية.</p>
@@ -139,15 +148,15 @@
             <h4 class="sidebar-widget-title">مقالات أخرى</h4>
             <div class="sidebar-posts">
               <a href="article-1.html" class="sidebar-post-item">
-                <img src="https://placehold.co/80x80/003087/ffffff?text=1" alt="مقال 1">
+                <img alt="مقال 1" loading="lazy" src="https://placehold.co/80x80/003087/ffffff?text=1">
                 <div><p>سوريا بلاست.. قصة صناعة بدأت بخطي إنتاج</p><span>19 فبراير 2026</span></div>
               </a>
               <a href="article-2.html" class="sidebar-post-item">
-                <img src="https://placehold.co/80x80/001f5b/ffffff?text=2" alt="مقال 2">
+                <img alt="مقال 2" loading="lazy" src="https://placehold.co/80x80/001f5b/ffffff?text=2">
                 <div><p>منذ 2018 وحتى اليوم: رحلة التطور والإنتاج</p><span>19 فبراير 2026</span></div>
               </a>
               <a href="article-4.html" class="sidebar-post-item">
-                <img src="https://placehold.co/80x80/FF6B00/ffffff?text=4" alt="مقال 4">
+                <img alt="مقال 4" loading="lazy" src="https://placehold.co/80x80/FF6B00/ffffff?text=4">
                 <div><p>أحدث تقنيات الحقن والنفخ في صناعة البلاستيك</p><span>19 فبراير 2026</span></div>
               </a>
             </div>
@@ -227,8 +236,14 @@
   </div>
 </footer>
 
-<button id="backToTop" title="العودة للأعلى"><i class="fas fa-chevron-up"></i></button>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- WhatsApp Float -->
+<a aria-label="تواصل عبر واتساب" class="whatsapp-float" href="https://wa.me/963983335577" rel="noopener" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+  <span class="wa-tooltip">تواصل عبر واتساب</span>
+</a>
+
+<button aria-label="العودة للأعلى" id="backToTop" title="العودة للأعلى"><i class="fas fa-chevron-up"></i></button>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   window.addEventListener('load', () => { const pre = document.getElementById('preloader'); pre.classList.add('hidden'); setTimeout(() => pre.style.display='none', 600); });
   const nav = document.getElementById('mainNav'); const btn = document.getElementById('backToTop');
